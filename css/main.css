@@ -1,3 +1,83 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: #3F585D;
+}
+
+.ion {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+      
+.step {
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    width: 20%;
+    margin-right: 35px;
+    font-size: 150px
+}
+
+.step:last-of-type 
+{
+    margin-right: 0px;
+}
+      
+.step i {
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+      
+.icon_container
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -300px;
+    width: 600px;
+    height: 150px;
+}
+    
+.person
+{
+    color: #EC5A5A;
+}
+      
+.microphone
+{
+    color: #EBF595;
+}
+      
+.build
+{
+    color: #71D3E2;
+}
+    
+.repeat
+{
+    color: #9B83C1;    
+}
+
 h1
 {
     color: white;
