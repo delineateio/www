@@ -26,15 +26,15 @@ body {
 }
 
 h1{
-    color: white;
-    font-size: 50px;
+    color: #5a7e85;
+    font-size: 68px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
 p{
-    color: white;
-    font-size: 18px;
+    color: #5a7e85;
+    font-size: 32px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
@@ -89,7 +89,7 @@ p{
 }
 
 .contact i{
-    color: white;  
+    color: #5a7e85;  
     padding: 15px;
     font-size: 40px;
 }
