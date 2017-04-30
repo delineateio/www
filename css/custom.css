@@ -65,19 +65,15 @@ nav i
 }
 
 .step-1{
-  color: #EC5A5A;
+  color: #f1c40f;
 }
 
 .step-2{
- color: #EBF595;
+ color: #e67e22;
 }
 
 .step-3{
-  color: #71D3E2;
-}
-
-.step-4{
-    color: #9B83C1;    
+  color: #e74c3c;
 }
 
 /* Mobile Portrait */
