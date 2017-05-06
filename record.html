@@ -1,0 +1,39 @@
+<html>
+
+    <script>
+        if(recognition == null)
+        {
+            var recognition = new webkitSpeechRecognition();
+            recognition.continuous = true;
+
+            
+            recognition.onresult = function(event) 
+            {
+                alert(event.results[0][0].transcript);
+
+                var output = document.getElementById('output');
+                output.textContent = event.results[0][0].transcript;
+            };
+        }
+        
+        function start()
+        {
+            recognition.start();
+        }
+        
+        function stop()
+        {
+            recognition.stop();
+        }
+        
+    </script>
+    
+    <body>
+    
+    
+    <div id="output"></div>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    
+    </body>
+</html>
