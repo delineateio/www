@@ -76,6 +76,10 @@ nav i
   color: #9b59b6;
 }
 
+p{
+  font-family: lato;  
+}
+
 /* Mobile Portrait */
 @media (min-width: 320px) {
     .nav
