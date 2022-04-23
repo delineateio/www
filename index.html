@@ -1,22 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>delineate.io</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143378831-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	gtag('config', 'UA-143378831-1');
+	</script>
+
+	<title>delineate.io</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
+<!--===============================================================================================-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/font-awesome-6.1.1/css/brands.css">
+	
+	<script defer src="public/font-awesome-6.1.1/js/all.js"></script>
+
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-    <div class="bg-img1 size1 overlay1 p-t-50" style="background-image: url('images/bg01.jpg');">
-        <div class="centered" style="font-size:4vw;"">portray or describe (something) precisely.</div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+	
+	<div class="bg-img1 size1 overlay1 p-t-24" style="background-image: url('images/bg01.jpg');">
+		<div class="flex-w flex-sb-m p-l-80 p-r-74 p-b-175 respon5">
+			<div class="wrappic1 m-r-30 m-t-10 m-b-10">
+				
+			</div>
+
+			<div class="flex-w m-t-10 m-b-10">
+				<a href="https://github.com/delineateio"" class="size3 flex-c-m how-social trans-04 m-r-6" target="_blank">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a href="https://console.cloud.google.com/home/dashboard" class="size3 flex-c-m how-social trans-04 m-r-6" target="_blank">
+					<i class="fa-brands fa-google"></i>
+				</a>
+				<a href="https://dash.cloudflare.com/" class="size3 flex-c-m how-social trans-04 m-r-6" target="_blank">
+					<i class="fa-brands fa-cloudflare"></i>
+				</a>
+				<a href="https://medium.com/delineateio" class="size3 flex-c-m how-social trans-04 m-r-6" target="_blank">
+					<i class="fa fa-rss"></i>
+				</a>
+				<a href="https://twitter.com/delineateio" class="size3 flex-c-m how-social trans-04 m-r-6" target="_blank">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a href="https://delineateio.slack.com" class="size3 flex-c-m how-social trans-04 m-r-6" target="_blank">
+					<i class="fa-brands fa-slack"></i>
+				</a>
+				<a href="mailto: oss@delineate.io" class="size3 flex-c-m how-social trans-04 m-r-6">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			
+			<div class="centered" style="font-size:4vw;"">portray or describe (something) precisely.</div>
+
+		</div>
+
+	</div>
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.5
+		})
+	</script>
+
+</body>
 </html>
