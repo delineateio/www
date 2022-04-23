@@ -1,6 +1,19 @@
 :root {
     --standard: white;
-    --accent: black;
+    --accent: #D32929;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
 }
 
 .buttons {
@@ -14,13 +27,13 @@ i {
     padding: 0.2em;
     margin: 0.3em ;
     border: 2pt;
-    border-color: var(--accent);
+    border-color: var(--standard);
     border-style: solid;
     float: left;
     margin: 0.2em ;
     font-size: 2.5em;
-    color: var(--accent);
-    background-color: var(--standard);
+    color: var(--standard);
+    background-color: transparent;
     height: max-content;
 }
 
@@ -34,15 +47,31 @@ i:after {
     color:var(--accent);
 }
 
-.title { 
-    min-height: 100vh;
+.title {
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    color: var(--standard);
     min-width: 85vw;
     max-width: 85vw;
     margin-left: 7.5vw;
     margin-right: 7.5vw;
     font-family: 'Space Mono', monospace;
-    font-size: 3.5em;
+    font-size: 4.5em;
+    font-weight: bold;
 }
+
+@media screen and (max-width: 767px) {
+
+    div.buttons {
+        font-size: 0.75em;
+        padding: 0.1em;
+    }
+
+    .title {
+        font-size: 3vh;
+    }
+} 
 
 @media screen and (max-width: 600px) {
 
