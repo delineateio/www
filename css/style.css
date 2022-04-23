@@ -1,5 +1,6 @@
 :root {
     --standard: white;
+    --background: #4F4F4F;
     --accent: #D32929;
 }
 
@@ -8,18 +9,19 @@ body {
 }
 
 .container {
-    background-image: url(../images/background.jpg);
+    background-image: linear-gradient(black, black), url(../images/background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
     margin: auto;
+    background-blend-mode: saturation;
 }
 
 .buttons {
     position:absolute;
-    top: 1vw;
-    right: 1vw;
+    top: 10vh;
+    right: 5vw;
     overflow: hidden;
 }
 
@@ -33,7 +35,8 @@ i {
     margin: 0.2em ;
     font-size: 2.5em;
     color: var(--standard);
-    background-color: transparent;
+    background-color: var(--background);
+    backdrop-filter: blur(95%);
     height: max-content;
 }
 
@@ -43,7 +46,7 @@ i:hover {
 }
 
 i:after {
-    background-color: var(--standard);
+    background-color: var(--background);
     color:var(--accent);
 }
 
@@ -61,38 +64,51 @@ i:after {
     font-weight: bold;
 }
 
-@media screen and (max-width: 767px) {
+/* handles i-ipad */
+@media screen and (max-width: 1030px) {
+    div.buttons {
+        font-size: 0.65em;
+        padding: 0.1em;
+    }
+    .title {
+        font-size: 9vh;
+    }
+} 
 
+/* handles i-ipad */
+@media screen and (max-width: 815px) {
     div.buttons {
         font-size: 0.75em;
         padding: 0.1em;
     }
-
     .title {
-        font-size: 3vh;
+        font-size: 9vh;
     }
 } 
 
 @media screen and (max-width: 600px) {
-
     div.buttons {
         font-size: 0.75em;
-        padding: 0.1em;
     }
-
     .title {
         font-size: 5vh;
     }
 } 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 361px) {
 
     div.buttons {
-        font-size: 0.55em;
-        padding: 0.1em;
+        font-size: 0.65em;
     }
 
     .title {
         font-size: 4.5vh;
     }
-} 
+}
+
+@media screen and (max-width: 290px) {
+
+    div.buttons {
+        font-size: 0.50em;
+    }
+}
