@@ -1,0 +1,114 @@
+:root {
+    --standard: white;
+    --background: #4F4F4F;
+    --accent: #D32929;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    background-image: linear-gradient(black, black), url(../images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
+    background-blend-mode: saturation;
+}
+
+.buttons {
+    position:absolute;
+    top: 10vh;
+    right: 5vw;
+    overflow: hidden;
+}
+
+i {
+    padding: 0.2em;
+    margin: 0.3em ;
+    border: 2pt;
+    border-color: var(--standard);
+    border-style: solid;
+    float: left;
+    margin: 0.2em ;
+    font-size: 2.5em;
+    color: var(--standard);
+    background-color: var(--background);
+    backdrop-filter: blur(95%);
+    height: max-content;
+}
+
+i:hover {
+  background-color: var(--accent);
+  color:var(--standard);
+}
+
+i:after {
+    background-color: var(--background);
+    color:var(--accent);
+}
+
+.title {
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    color: var(--standard);
+    min-width: 85vw;
+    max-width: 85vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    font-family: 'Space Mono', monospace;
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+/* handles i-ipad */
+@media screen and (max-width: 1030px) {
+    div.buttons {
+        font-size: 0.65em;
+        padding: 0.1em;
+    }
+    .title {
+        font-size: 9vh;
+    }
+} 
+
+/* handles i-ipad */
+@media screen and (max-width: 815px) {
+    div.buttons {
+        font-size: 0.75em;
+        padding: 0.1em;
+    }
+    .title {
+        font-size: 9vh;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    div.buttons {
+        font-size: 0.75em;
+    }
+    .title {
+        font-size: 5vh;
+    }
+} 
+
+@media screen and (max-width: 361px) {
+
+    div.buttons {
+        font-size: 0.65em;
+    }
+
+    .title {
+        font-size: 4.5vh;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    div.buttons {
+        font-size: 0.50em;
+    }
+}
