@@ -4,8 +4,15 @@
     --accent: #D32929;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
+    min-height: 100vh;
     margin: 0px;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 .container {
