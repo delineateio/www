@@ -101,10 +101,6 @@ i:after {
 }
 
 @media only screen and (max-width: 725px) and (max-height: 525px){
-    /* .icon {
-        max-width: 2vw;
-        max-height: 10vw;
-    } */
     .title {
         font-size: 2em;
     }
