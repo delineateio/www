@@ -4,20 +4,14 @@
     --background: #1B9C8A;
 }
 
-@font-face {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/space-mono-v10-latin-700.woff2') format('woff2'), 
-        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-         url('../fonts/space-mono-v10-latin-700.woff') format('woff'); 
-    font-display: swap;
-  }
+html { 
+    background: var(--background) !important; 
+}
 
 /* overrides bootstrap */
-body { background: var(--background) !important; }
+body { 
+    background: var(--background) !important; 
+}
 
 .buttons {
     text-align: right;
