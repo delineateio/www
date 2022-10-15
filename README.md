@@ -1,4 +1,3 @@
-[![CircleCI][circleci-url]][circleci-url]
 [![PRs Welcome][pr-welcome-shield]][pr-welcome-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -18,14 +17,14 @@
   <p align="center">
     This repo is the website for <a href="https://www.delineate.io">https://www.delineate.io</a>
     <br />
-    <a href="https://github.com/delineateio/oss-template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/delineateio/delineateio-www"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://www.delineate.io">Website</a>
     ·
-    <a href="https://github.com/delineateio/oss-template/issues">Report Bug</a>
+    <a href="https://github.com/delineateio/delineateio-www/issues">Report Bug</a>
     ·
-    <a href="https://github.com/delineateio/oss-template/issues">Request Feature</a>
+    <a href="https://github.com/delineateio/delineateio-www/issues">Request Feature</a>
   </p>
 </p>
 
@@ -86,7 +85,7 @@ task cloud:apply
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/delineateio/oss-template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/delineateio/delineateio-www/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -119,16 +118,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[circleci-url]: https://img.shields.io/circleci/build/gh/delineateio/oss-template?style=for-the-badge&logo=circleci
 [pr-welcome-shield]: https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=for-the-badge&logo=github
-[pr-welcome-url]: https://github.com/delineateio/oss-template/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue
-[contributors-shield]: https://img.shields.io/github/contributors/delineateio/oss-template.svg?style=for-the-badge&logo=github
-[contributors-url]: https://github.com/delineateio/oss-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/delineateio/oss-template.svg?style=for-the-badge&logo=github
-[forks-url]: https://github.com/delineateio/oss-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/delineateio/oss-template.svg?style=for-the-badge&logo=github
-[stars-url]: https://github.com/delineateio/oss-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/delineateio/oss-template.svg?style=for-the-badge&logo=github
-[issues-url]: https://github.com/delineateio/oss-template/issues
-[license-shield]: https://img.shields.io/github/license/delineateio/oss-template.svg?style=for-the-badge&logo=github
-[license-url]: https://github.com/delineateio/oss-template/blob/master/LICENSE
+[pr-welcome-url]: https://github.com/delineateio/delineateio-www/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue
+[contributors-shield]: https://img.shields.io/github/contributors/delineateio/delineateio-www.svg?style=for-the-badge&logo=github
+[contributors-url]: https://github.com/delineateio/delineateio-www/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/delineateio/delineateio-www.svg?style=for-the-badge&logo=github
+[forks-url]: https://github.com/delineateio/delineateio-www/network/members
+[stars-shield]: https://img.shields.io/github/stars/delineateio/delineateio-www.svg?style=for-the-badge&logo=github
+[stars-url]: https://github.com/delineateio/delineateio-www/stargazers
+[issues-shield]: https://img.shields.io/github/issues/delineateio/delineateio-www.svg?style=for-the-badge&logo=github
+[issues-url]: https://github.com/delineateio/delineateio-www/issues
+[license-shield]: https://img.shields.io/github/license/delineateio/delineateio-www.svg?style=for-the-badge&logo=github
+[license-url]: https://github.com/delineateio/delineateio-www/blob/master/LICENSE
