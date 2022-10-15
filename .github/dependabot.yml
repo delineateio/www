@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/.devcontainer"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "terraform"
+    directory: "/ops/cloud"
+    schedule:
+      interval: "weekly"

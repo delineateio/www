@@ -1,0 +1,2 @@
+workspaces { name = "delineateio-www" }
+organization = "delineateio"
