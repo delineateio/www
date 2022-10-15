@@ -13,15 +13,15 @@
   <h2 align="center">delineate.io</h2>
   <p align="center">portray or describe (something) precisely.</p>
 
-  <h3 align="center">[PROJECT_TITLE]</h3>
+  <h3 align="center">www</h3>
 
   <p align="center">
-    [PROJECT_DESCRIPTION]
+    This repo is the website for <a href="https://www.delineate.io">https://www.delineate.io</a>
     <br />
     <a href="https://github.com/delineateio/oss-template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/delineateio/oss-template">View Demo</a>
+    <a href="https://www.delineate.io">Website</a>
     ·
     <a href="https://github.com/delineateio/oss-template/issues">Report Bug</a>
     ·
@@ -36,13 +36,8 @@
 
 - [About The Project](#about-the-project)
 - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Local Dependencies](#local-dependencies)
-  - [Local Setup](#local-setup)
-- [Usage](#usage)
+- [Application](#application)
 - [Infrastructure](#infrastructure)
-  - [Local Services](#local-services)
-  - [Cloud Infrastructure](#cloud-infrastructure)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -53,10 +48,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The repo description should be added here and describe at least:
+The [delineate.io](https://www.delineate.io) website is hosted using [Vercel](https://vercel.com/), the deployment takes advantage of the Vercel capabilities for previewing:
 
-* Purpose of the repo e.g. problem/opportunity statement
-* High level description of the overall approach/solution
+* The preview website is at [delineate.dev](https://www.delineate.dev)
+* The production website is at [delineate.io](https://www.delineate.io)
+
+As part of this solution the cloud resource infrastructure has also been automated, including both Vercel and [Cloudflare](https://www.cloudflare.com).
 
 ## Built With
 
@@ -66,60 +63,24 @@ Further logos can be inserted to highlight the specific technologies used to cre
 | --- | ----------- |
 | ![pre-commit](https://img.shields.io/badge/precommit-%235835CC.svg?style=for-the-badge&logo=precommit&logoColor=white) | Pre-commit `git` hooks that perform checks before pushes|
 | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) | Source control management platform  |
-| ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | Containerise applications and provide local environment |
-| ![CircleCI](https://img.shields.io/badge/CIRCLECI-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white) | CI/CD pipeline and services |
+|![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) | Hosting of the websites|
 | ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) | Cloud infrastructure provisioning configuration|
 | ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) | Security and DNS services for internet services|
-| ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) | Hosting of services on Google Cloud |
 
-<!-- GETTING STARTED -->
-## Getting Started
+## Application
 
-To get a local copy up and running follow these simple steps.
-
-### Local Dependencies
-
-A number of local dependencies are required.  To review the local dependencies run `task dependencies:list`.  If new local dependencies then they should be added to the correct Taskfile in `./os` e.g. `taskfile.darwin.yaml`.
-
-> Note that currently only `macOS` is configured and a PR should be submitted if either `Linux` or `Windows` are required.
-
-### Local Setup
-
-This repo follows the principle of minimal manual setup of the local development environment.
-
- A `task` target has been provided for simplicity ```task init```, the `taskfile.yaml` file can be inspected for more details.
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)._
+The application code is [here](./dev), it is a basic html, css and javascript website and doesn't use an advanced web framework.
 
 ## Infrastructure
 
-### Local Services
-
-A boilerplate `docker-compose` file is provided that can be used to manage local environment services.  The stack can be found at `ops/local/stack.yaml`.
+The Vercel and Cloudflare cloud resources have been automated using [Terraform Cloud](https://cloud.hashicorp.com/products/terraform).
 
 ```shell
-# stands up the local services
-task local:up
+# plans the terraform config
+task cloud:plan
 
-# tears down the local services
-task local:down
-```
-
-### Cloud Infrastructure
-
-A boilerplate configuration is provided for using `terraform` configuration to provision cloud infrastructure.  [tfenv](https://github.com/tfutils/tfenv) is used to select the version of `terraform` to use.  The repo template provides a single component in `ops/cloud/component`.
-
-```shell
-# plans the network terraform config
-task cloud:plan LAYER=component
-
-# auto approves applying the network terraform config
-task cloud:apply LAYER=component
+# auto approves applying the terraform config
+task cloud:apply
 ```
 
 <!-- ROADMAP -->
