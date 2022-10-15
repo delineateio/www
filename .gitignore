@@ -1,3 +1,4 @@
 .vercel
 .terraform
 .DS_Store
+.dccache
