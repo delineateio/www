@@ -4,7 +4,7 @@ ci:
 repos:
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.32.2
+    rev: v0.35.0
     hooks:
       - id: markdownlint
         name: markdown linting
@@ -16,7 +16,7 @@ repos:
         name: update toc
 
   - repo: https://github.com/gitguardian/ggshield
-    rev: v1.14.2
+    rev: v1.16.0
     hooks:
       - id: ggshield
         name: gitguardian scanning
@@ -37,7 +37,7 @@ repos:
         name: check json
 
   - repo: https://github.com/gruntwork-io/pre-commit
-    rev: v0.1.17
+    rev: v0.1.22
     hooks:
       - id: terraform-fmt
         name: terraform linting
