@@ -7,7 +7,7 @@ terraform {
     }
     vercel = {
       source  = "vercel/vercel"
-      version = ">= 0.10.3, < 1.0.0"
+      version = ">= 0.10.3, < 2.0.0"
     }
   }
   backend "remote" {}
