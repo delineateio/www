@@ -11,6 +11,8 @@
         "devcontainer",
         "devcontainers",
         "doctoc",
+        "ggshield",
+        "gitguardian",
         "gomod",
         "gopath",
         "goroot",
